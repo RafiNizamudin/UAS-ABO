@@ -53,7 +53,7 @@ export default function PatientPage() {
 
               <button
                 onClick={() => {
-                  window.location.href = '/UAS-ABO/login';
+                  window.location.href = '/login';
                 }}
                 style={{
                   marginTop: '0.75rem',
