@@ -5,6 +5,7 @@ import { id as localeId } from 'date-fns/locale';
 import supabase from '../utils/supabase';
 import Footer from '../components/Footer';
 import { FaUserCircle } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const jadwalDokter = [
   { hari: 'Senin', jam: '08:00 - 12:00' },
@@ -17,6 +18,7 @@ export default function DoctorPage() {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [pasienList, setPasienList] = useState<any[]>([]);
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
 
   const today = new Date();
   const daysInMonth = eachDayOfInterval({
@@ -85,7 +87,7 @@ export default function DoctorPage() {
 
               <button
                 onClick={() => {
-                  window.location.href = '/login';
+                  navigate('/login');
                 }}
                 style={{
                   marginTop: '0.75rem',

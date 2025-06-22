@@ -5,6 +5,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
+import { useNavigate } from 'react-router-dom';
 
 const dummyDokterPerPoli = {
   'Umum': [{ id: 1, nama: 'dr. Budi' }],
@@ -74,7 +75,8 @@ export default function AdminPage() {
 
               <button
                 onClick={() => {
-                  window.location.href = '/login';
+                  const navigate = useNavigate();
+                  navigate('/login');
                 }}
                 style={{
                   marginTop: '0.75rem',

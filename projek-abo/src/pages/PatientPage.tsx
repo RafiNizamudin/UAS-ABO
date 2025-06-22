@@ -3,6 +3,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import AntrianForm from '../components/AntrianForm';
 import PerjanjianForm from '../components/PerjanjianForm';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 export default function PatientPage() {
   const [activeSection, setActiveSection] = useState<'antrian' | 'perjanjian' | null>(null);
@@ -53,7 +54,8 @@ export default function PatientPage() {
 
               <button
                 onClick={() => {
-                  window.location.href = '/login';
+                  const navigate = useNavigate();
+                  navigate('/login');
                 }}
                 style={{
                   marginTop: '0.75rem',
