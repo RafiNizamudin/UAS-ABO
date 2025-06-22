@@ -32,6 +32,7 @@ export default function AdminPage() {
   const [selectedPeriode, setSelectedPeriode] = useState('');
   const [showData, setShowData] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
 
   const handleTampilkan = () => {
     if (!selectedPeriode) return alert('Silakan pilih periode terlebih dahulu');
@@ -75,7 +76,6 @@ export default function AdminPage() {
 
               <button
                 onClick={() => {
-                  const navigate = useNavigate();
                   navigate('/login');
                 }}
                 style={{

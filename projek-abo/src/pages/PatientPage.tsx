@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export default function PatientPage() {
   const [activeSection, setActiveSection] = useState<'antrian' | 'perjanjian' | null>(null);
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -54,7 +55,6 @@ export default function PatientPage() {
 
               <button
                 onClick={() => {
-                  const navigate = useNavigate();
                   navigate('/login');
                 }}
                 style={{
