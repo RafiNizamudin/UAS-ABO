@@ -74,7 +74,7 @@ export default function AdminPage() {
 
               <button
                 onClick={() => {
-                  window.location.href = '/login';
+                  window.location.href = '/UAS-ABO/login';
                 }}
                 style={{
                   marginTop: '0.75rem',
