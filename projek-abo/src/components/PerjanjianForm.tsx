@@ -150,6 +150,18 @@ export default function PerjanjianForm() {
           />
         </div>
 
+        <div>
+<label>
+  tangal lahir
+</label>
+<input type="date" 
+value={tanggal}
+onChange={(e) => setTanggal(e.target.value)}
+            required
+/>
+        </div>
+        
+
         <button type="submit">Buat Perjanjian</button>
       </form>
     </div>
