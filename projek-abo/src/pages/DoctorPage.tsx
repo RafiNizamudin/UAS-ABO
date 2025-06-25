@@ -82,7 +82,7 @@ export default function DoctorPage() {
               }}
             >
               <p><strong>Nama:</strong> John Doe</p>
-              <p><strong>Peran:</strong> Pasien</p>
+              <p><strong>Peran:</strong> Doktor</p>
               <p><strong>Email:</strong> john@example.com</p>
 
               <button
