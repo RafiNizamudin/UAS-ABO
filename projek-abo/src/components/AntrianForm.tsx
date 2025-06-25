@@ -27,6 +27,7 @@ export default function AntrianForm() {
       poli: data.poli,
       dokter: data.dokter,
       tanggal: data.tanggal,
+      tanggal_lahir: data.tanggal_lahir,
       jam: data.jam,
       antrian: data.nomor_antrian,
     });
