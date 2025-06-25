@@ -29,6 +29,7 @@ export default function PerjanjianForm() {
   const [poli, setPoli] = useState('');
   const [dokter, setDokter] = useState('');
   const [tanggal, setTanggal] = useState('');
+  const [tanggal_lahir, setTanggalLahir] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [bukti, setBukti] = useState<any>(null);
 
@@ -68,6 +69,7 @@ export default function PerjanjianForm() {
         poli,
         dokter,
         tanggal,
+        tanggal_lahir,
         jam: jadwal.jam,
         nomor_antrian: nomorAntrian
       })
@@ -86,6 +88,7 @@ export default function PerjanjianForm() {
       poli: data.poli,
       dokter: data.dokter,
       tanggal: data.tanggal,
+      tanggal_lahir: data.tanggal_lahir
       // jam: data.jam,
       // antrian: data.nomor_antrian,
     });
@@ -153,8 +156,8 @@ export default function PerjanjianForm() {
         <div className='form-group'>
           <label>Tangal Lahir</label>
           <input type="date" 
-          value={tanggal}
-          onChange={(e) => setTanggal(e.target.value)}
+          value={tanggal_lahir}
+          onChange={(e) => setTanggalLahir(e.target.value)}
           required
           />
         </div>
