@@ -6,6 +6,7 @@ type BuktiProps = {
   poli: string;
   dokter: string;
   tanggal: string;
+  tanggal_lahir: string;
   jam: string;
   antrian: number;
 };
@@ -16,6 +17,7 @@ export default function BuktiPerjanjian({
   poli,
   dokter,
   tanggal,
+  tanggal_lahir,
   jam,
   antrian,
 }: BuktiProps) {
@@ -42,6 +44,7 @@ export default function BuktiPerjanjian({
         <p><strong>Poli:</strong> {poli}</p>
         <p><strong>Dokter:</strong> {dokter}</p>
         <p><strong>Tanggal:</strong> {tanggal}</p>
+        <p><strong>Tanggal Lahir:</strong> {tanggal_lahir}</p>
         <p><strong>Waktu Praktik:</strong> {jam}</p>
         <p><strong>Nomor Antrian:</strong> {antrian}</p>
       </div>
